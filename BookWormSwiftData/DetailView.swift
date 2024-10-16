@@ -43,6 +43,13 @@ struct DetailView: View {
 
             RatingView(rating: .constant(book.rating))
                 .font(.largeTitle)
+            
+          
+            Divider()
+                .padding(.bottom, 50)
+            
+                Text("Date of reading the book - \(book.date.formatted()) ")
+            
         }
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
@@ -81,6 +88,6 @@ struct DetailView: View {
 //    }
 //}
 #Preview {
-    DetailView(book: Book(title: "wdw", author: "wdwdw", genre: "Fantasy", review: "gtgtgtgsdRRREdqda", rating: 4))
+    DetailView(book: Book(title: "Название", author: "автор", genre: "Fantasy", review: "что то про книгу", rating: 4))
 
 }
