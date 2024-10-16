@@ -10,6 +10,8 @@ import SwiftUI
 
 @Model
 class Book {
+    
+    var date = Date.now
     var title: String
     var author: String
     var genre: String
